@@ -146,8 +146,11 @@ int main() {
                         else even[y++] = arr[i];
                     }
                     printf("Mang sau khi sap xep: ");
-                    for (int i = 0; i < x; i++) printf("%d ", odd[i]);
-                    for (int i = 0; i < y; i++) printf("%d ", even[i]);
+                    for (int i = 0; i < x; i++) {
+                    printf("%d ", odd[i]);}
+                    for (int i = 0; i < y; i++) {
+                        printf("%d ", even[i]);}
+                                                 
                     printf("\n");
                 }
                 break;
