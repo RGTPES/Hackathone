@@ -119,10 +119,11 @@ switch(ans){
 			printf("moi ban nhap mang");
 			break;
 		}else{
+			end = a-1;
 			printf("nhap gia tri can tim : ");
 			scanf("%d",&item);
 		while(start<=end){
-	end = a-1;
+	
 	mid =(start+end)/2;
 	if(arr[mid]==item){
 		printf("phan tu %d co vi tri  thu %d ",item,mid+1);
