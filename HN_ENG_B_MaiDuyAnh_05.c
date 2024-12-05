@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 int main() {
     int q = 100, a, value, index, mid, start, end, check, temp, min, secondMin;
@@ -122,19 +123,25 @@ int main() {
             case 8: 
                 if (flag != 1) {
                     printf("Moi ban nhap mang truoc!\n");
-                } else {
-                    printf("Nhap gia tri can tim: ");
-                    scanf("%d", &item);
-                    check = 0;
-                    for (int i = 0; i < a; i++) {
-                        if (arr[i] == item) {
-                            printf("Phan tu %d co vi tri thu %d\n", item, i + 1);
-                            check = 1;
-                            break;
-                        }
-                    }
-                    if (!check) printf("Khong tim thay phan tu %d\n", item);
-                }
+               
+		}else{
+			end = a-1;
+			printf("nhap gia tri can tim : ");
+			scanf("%d",&item);
+		while(start<=end){
+		
+		mid =(start+end)/2;
+		if(arr[mid]==item){
+		printf("phan tu %d co vi tri  thu %d ",item,mid+1);
+		 check = 2;
+		break;
+		}else if(arr[mid] <item ){
+		start = mid +1;
+	}else if(arr[mid] >item){
+			end = mid -1;
+	}
+	}
+}
                 break;
             case 9:  
                 if (flag != 1) {
@@ -176,3 +183,4 @@ int main() {
     return 0;
 }
 
+    
