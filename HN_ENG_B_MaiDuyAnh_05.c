@@ -41,19 +41,7 @@ int main() {
                 }
                 break;
             case 3:  
-                if (flag != 1) {
-                    printf("Moi ban nhap mang truoc!\n");
-                } else {
-                    count = 0;
-                    for (int i = 0; i < a; i++) {
-                        int sum = 0;
-                        for (int j = 1; j <= arr[i] / 2; j++) {
-                            if (arr[i] % j == 0) sum += j;
-                        }
-                        if (sum == arr[i]) count++;
-                    }
-                    printf("So luong cac so hoan hao trong mang: %d\n", count);
-                }
+        
                 break;
             case 4:  
                 if (flag != 1) {
@@ -162,20 +150,7 @@ int main() {
                 }
                 break;
             case 10:  
-                if (flag != 1) {
-                    printf("Moi ban nhap mang truoc!\n");
-                } else {
-                    for (int i = 0; i < a / 2; i++) {
-                        temp = arr[i];
-                        arr[i] = arr[a - 1 - i];
-                        arr[a - 1 - i] = temp;
-                    }
-                    printf("Mang sau khi dao nguoc: ");
-                    for (int i = 0; i < a; i++) {
-                        printf("%d ", arr[i]);
-                    }
-                    printf("\n");
-                }
+             
                 break;
         }
     } while (ans != 11);
